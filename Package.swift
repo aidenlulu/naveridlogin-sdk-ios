@@ -8,7 +8,7 @@ let package = Package(
     platforms: [.iOS(.v14)],
     products: [
         .library(name: "NaverIdLoginLulu",
-                 targets: ["NaverThirdPartyLogin"])
+                 targets: ["NaverThirdPartyLoginTarget"])
     ],
     targets: [
         .binaryTarget(name: "NaverThirdPartyLogin", path: "NaverThirdPartyLogin.xcframework"),
