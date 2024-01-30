@@ -5,6 +5,10 @@ import PackageDescription
 
 let package = Package(
     name: "naveridlogin-sdk-ios",
+    products: [
+        .library(name: "NaverIdLoginLulu",
+                 targets: ["NaverThirdPartyLogin"])
+    ],
     targets: [
         .binaryTarget(name: "NaverThirdPartyLogin", path: "NaverThirdPartyLogin.xcframework")
     ]
